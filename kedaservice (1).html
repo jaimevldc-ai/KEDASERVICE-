@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KEDASERVICE - Contadores</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            line-height: 1.6;
+        }
+        header {
+            background: #002244;
+            color: #fff;
+            padding: 15px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        header h1 { margin: 0; font-size: 1.5rem; }
+        nav a {
+            color: #fff; margin: 0 10px; text-decoration: none; font-weight: bold;
+        }
+        nav a:hover { text-decoration: underline; }
+        .hero {
+            background: url("https://images.unsplash.com/photo-1521791055366-0d553872125f?auto=format&fit=crop&w=1500&q=80") no-repeat center center/cover;
+            color: white; height: 70vh; display: flex; flex-direction: column;
+            justify-content: center; align-items: center; text-align: center; padding: 0 20px;
+        }
+        .hero h2 { font-size: 2.5rem; margin-bottom: 15px; }
+        .btn {
+            background: #0077cc; color: white; padding: 12px 25px; border-radius: 5px;
+            text-decoration: none; font-weight: bold;
+        }
+        .btn:hover { background: #005fa3; }
+        section { padding: 50px 20px; max-width: 1100px; margin: auto; }
+        .services {
+            display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px;
+        }
+        .service {
+            background: #f4f4f4; padding: 20px; border-radius: 8px; text-align: center;
+        }
+        footer {
+            background: #002244; color: #fff; text-align: center; padding: 20px;
+        }
+        form input, form textarea {
+            width: 100%; padding: 10px; margin: 10px 0; border-radius: 5px; border: 1px solid #ccc;
+        }
+        form button {
+            background: #0077cc; color: white; border: none; padding: 12px;
+            width: 100%; border-radius: 5px; cursor: pointer;
+        }
+        form button:hover { background: #005fa3; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>KEDASERVICE</h1>
+        <nav>
+            <a href="#inicio">Inicio</a>
+            <a href="#nosotros">Nosotros</a>
+            <a href="#servicios">Servicios</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+    </header>
+    <section class="hero" id="inicio">
+        <h2>Confianza y claridad en tu contabilidad</h2>
+        <p>Asesoría fiscal y contable para empresas y personas físicas</p>
+        <a href="#contacto" class="btn">Agenda tu cita</a>
+    </section>
+    <section id="nosotros">
+        <h2>Sobre nosotros</h2>
+        <p>
+            En <strong>KEDASERVICE</strong> ofrecemos servicios contables y fiscales 
+            con profesionalismo y transparencia. Nuestro equipo de expertos está 
+            comprometido en ayudarte a optimizar tus recursos y cumplir con tus 
+            obligaciones fiscales.
+        </p>
+    </section>
+    <section id="servicios">
+        <h2>Nuestros servicios</h2>
+        <div class="services">
+            <div class="service">
+                <h3>Declaraciones fiscales</h3>
+                <p>Gestión completa de tus declaraciones y cumplimiento normativo.</p>
+            </div>
+            <div class="service">
+                <h3>Contabilidad empresarial</h3>
+                <p>Soluciones contables para PYMEs y grandes empresas.</p>
+            </div>
+            <div class="service">
+                <h3>Nóminas</h3>
+                <p>Administración segura y puntual de pagos de nómina.</p>
+            </div>
+            <div class="service">
+                <h3>Asesoría financiera</h3>
+                <p>Planeación estratégica para optimizar tus recursos.</p>
+            </div>
+            <div class="service">
+                <h3>Auditoría interna</h3>
+                <p>Revisión profesional para garantizar la transparencia financiera.</p>
+            </div>
+        </div>
+    </section>
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <form>
+            <input type="text" placeholder="Tu nombre" required>
+            <input type="email" placeholder="Tu correo" required>
+            <textarea rows="5" placeholder="Tu mensaje" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+    <footer>
+        <p>© 2025 KEDASERVICE - Todos los derechos reservados</p>
+    </footer>
+</body>
+</html>
